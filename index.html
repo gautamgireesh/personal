@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gautam Gireesh</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        .w3-lobster {
+                font-family: "Lobster", serif;
+            }
+            body, html {
+                height: 100%;
+            }
+            .home{
+                background-image: url("toronto4.jpg");
+                 margin-top: 80px;
+                transform: scale(1.1);
+                filter: blur(8px);
+                -webkit-filter: blur(4px);
+                height: 100%; 
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .home_content{
+                color: white;
+                font-weight: bolder;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                width: 80%;
+                padding: 20px;
+                text-align: center;
+                font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+            }
+            .int_body{
+                padding: 15%;
+                width:100%;
+            }
+           .int_body hr{
+                width: 50px;
+                transition: 1s;
+            }
+            .int_body:hover hr{
+                width:100%;
+            }
+            .proj_body{
+                background-image: url("code.jpg");
+                transform: scale(1.1);
+                filter: blur(8px);
+                -webkit-filter: blur(4px);
+                height: 100%; 
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            @media screen and (max-width: 990px){
+                .phr .proj_card h6{
+                    display: none;
+                }    
+                .exp .exp_card h6{
+                    display: none;  
+                }
+            }
+            .phr hr{
+                width: 50px;
+                transition: 1s;
+            }
+            .phr:hover hr{
+                width:75%;
+            }
+            .phr .proj_card{
+                background-color:  rgba(0,0,0,0.5);
+                padding: 2%;
+                text-align: center;
+                margin: 2%;
+                width: 40%;
+                transition: 0.5s;
+            }
+            .phr .proj_card:hover{
+                background-color: rgba(100,0,0,0.5);
+                box-shadow: 3px 3px 3px #000000;
+                transform: scale(1.1);
+            }
+            .exp{
+                padding: 12%;
+                width: 100%;
+            }
+            .exp hr{
+                width: 50px;
+                transition: 1s;
+            }
+            .exp:hover hr{
+                width:100%;
+            }
+            .res_body{
+                background-image: url("workfinal.jpg");
+                transform: scale(1.1);
+                filter: blur(8px);
+                -webkit-filter: blur(4px);
+                height: 100%; 
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .res_body .res_mask{
+                background-color: rgba(0,0,0,0.5);
+            }
+            .res_cont{
+                padding: 5%;
+            }
+            .res_butt{
+                padding: 20px;
+                cursor: pointer;
+                text-align: center;
+                border-radius: 12px;
+                border: none;
+                width: 100px;
+                background-color:  rgba(0,0,0,0.5);
+                color: #ffffff;
+            }
+            .res_butt span{
+                transition: 0.5s;
+            }
+            .res_butt:hover span{
+                color: red;
+            }
+            .cont{
+                padding: 8%;
+                width: 100%;
+            }
+            .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+          }
+
+          .fa:hover {
+              opacity: 0.8;
+          }
+          .fa-facebook {
+            background: #3B5998;
+            color: white;
+          }
+          .fa-linkedin {
+            background: #007bb5;
+            color: white;
+          }
+          .fa-instagram {
+            background: #125688;
+            color: white;
+          }
+          .fa-github{
+              background: #000000;
+              color: white;
+          }
+          .fa-envelope{
+              background: red; 
+              color: white;    
+          }
+          .cont hr{
+              width: 50px;
+              transition: 1s;
+          }
+          .cont:hover hr{
+              width: 100%;
+          }    
+        </style>
+    </head>
+    <body>
+        <!--Menu bar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                    <a style="color: #ff0033; font-weight: bolder"class="navbar-brand" href="#"><p class="w3-xlarge w3-lobster">GG</p></a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#int">Introduction</a></li>
+                  <li><a href="#proj">Projects</a></li>
+                  <li><a href="#exp">Experience</a></li>
+                  <li><a href="#res">Resume</a></li>
+                  <li><a href="#cont">Contact Me</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        
+        <!--Blurred photo and main text-->
+        <div style="height: 500px;">
+            <div class="" style="z-index: 99; position: absolute; margin-top: 100px; width: 100%;">
+                <div class="" style="float: left;margin-left: 60%;">
+                    <img style="width: 150px; border-radius: 100px;" src="gg.jfif">
+                </div>
+                <div class="" style="float: right;margin-right: 9%;margin-top: 2%;">
+                    <h1 style="font-weight: bold;color: #cccccc">Hey, I'm Gautam Gireeshhh</h1>
+                    <h3 style="color: #cccccc"><b><font color="red">C</font></b>omputer <b><font color="red">S</font></b>cience undergraduate</h3>
+                </div>
+            </div>
+            <div id="home" class="home"></div> 
+        </div>
+
+        <!--Introduction-->
+        <div id="int" class="int_body">
+            <center>
+                <h1 style="font-weight: bolder"><font color="red">I</font>ntroduction</h1><hr></center>
+                <h5>Born in India, brought up in Kuwait. I'm currently a 2nd year student at the University of Toronto
+                pursuing a dual major degree in Computer Science and Statistics with a minor in Mathematics.<br>
+                </h5>
+        </div>
+        
+        <!--Project-->
+        <div style="height: 500px;">
+            <div class="phr" style="z-index: 99; position: absolute; margin-top: 100px; width: 100%;">
+                <center><h1 style="margin-top: -50px;font-weight: bolder;"><font color="red">P</font><font color="white">rojects</font></h1></center>
+                <center><hr>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="proj_card">
+                            <img style="width: 40px; border-radius: 50%;" src="telephone.jpg" alt="telephone"/>
+                            <h4 style="font-weight: bolder;"><font color="white">Telephone directory</font></h4>
+                            <h6><font color="white">Languages used: C++</font></h6>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="proj_card">
+                            <img style="width: 70px; border-radius: 50%;" src="bird.jpg" alt="bird"/>
+                            <h4 style="font-weight: bolder;"><font color="white">Chirpr</font></h4>
+                            <h6><font color="white">Languages used: Python</font></h6>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="proj_card">
+                            <img style="width: 50px; border-radius: 50%;" src="tower.jpg" alt=""/>
+                            <h4 style="font-weight: bolder;"><font color="white">Mewbile Tech</font></h4>
+                            <h6><font color="white">Languages used: Python</font></h6>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="proj_card">
+                            <img style="width: 60px; border-radius: 50%;" src="gglogo.PNG" alt=""/>
+                            <h4 style="font-weight: bolder;"><font color="white">Personal webpage</font></h4>
+                            <h6><font color="white">Languages used: HTML,CSS,Bootstrap</font></h6>
+                        </div> 
+                    </div> 
+                </div></center>
+            </div>
+            <div id="proj" class="proj_body"></div> 
+        </div>    
+        <div id="exp" class="exp">
+            <center><h1 style="font-weight: bolder"><font color="red">E</font>xperience<hr></h1></center>
+            <div class="row">
+                <div class="exp_card col-xs-6">
+                    <div style="float: left">
+                        <h2 style="font-weight:500;">IT Summer Intern</h2>
+                        <p><font color=grey>Kuwait Oil Company, Kuwait</font></p>
+                        <p><font color="grey">Summer 2018</font></p>
+                        <h6><font color="black">Interned at the IT department of Kuwait Oil Company for a period of one month.<br>
+                            With this experience, I gained insight about data and server management,and got hands on experience<br>
+                        working with computer hardware. During the course of the internship, we were also introduced to networking and cyber security</font></h6>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <img style="width: 150px;float: right; margin-top: 30px;" src="KOC.png" alt=""/>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img  style="width: 150px; float: left; margin-top: 40px; border-radius: 50%;" src="loyac.png" alt=""/>
+                </div>
+                <div class="exp_card col-xs-6">
+                    <div style="float: right">
+                        <h2 style="font-weight:500;">Volunteer</h2>
+                        <p><font color="grey">IGN Gaming Convention, Kuwait</font></p>
+                        <p><font color="grey">November 2017</font></p>
+                        <h6><font color="black">Volunteered at a three day IGN gaming event through Loyac,<br>
+                            an organization for youth development in Kuwait. We assisted the visitors by guiding them or answering any questions they had<br>
+                            We also helped the participants and companies set up their stalls.</font></h6>
+                    </div>
+                </div>
+            </div> 
+        </div>
+<!--        <div id="res" class="res_body">
+            <div class="res_mask">
+                <div class="res_cont">
+                    <h1 style="font-weight: 600;"><font color="red">H</font><font color="white">ere's my resume:</font></h1>
+                    <br>
+                    <center><a href="GautamGireesh_Resume-converted.pdf"><button class="res_butt"><span class="res_openeye glyphicon glyphicon-eye-open"></span></button></a></center>
+                </div>
+            </div>
+        </div>-->
+
+        <div style="height: 500px;">
+            <div class="res_cont" style="z-index: 99; position: absolute; margin-top: 100px; width: 100%;">
+                <h1 style="font-weight: bolder;"><font color="red">H</font><font color="white">ere's my resume:</font></h1>
+                <br>
+                <center><a href="GautamGireesh_Resume-converted.pdf"><button class="res_butt"><span class="res_openeye glyphicon glyphicon-eye-open"></span></button></a></center>
+            </div>
+            <div id="res" class="res_body"></div> 
+        </div>
+
+        <div id="cont" class="cont">
+            <center><h1 style="font-weight: bolder"><font color="red">C</font>ontact</h1><hr></center>
+            <div class="container-fluid">
+            <div class="row">
+                 <div class="col-lg-4">
+                     <center>
+                    <a href="https://www.facebook.com/gautamgireesh" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/gautamgireesh/?hl=en" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/gautam-gireesh-14823a170" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/gautamgireesh" class="fa fa-github"></a>
+                    <a href="mailto:gautam.gireesh@mail.utoronto.ca" class="fa fa-envelope"></a>
+                     </center>
+                </div>
+                <div class="col-lg-4">
+                    <center><b>Phone</b></center>
+                    <p style="text-align: center">+1 (647) 701 7081</p>    
+                </div>
+                <div class="col-lg-4">
+                    <center><b>Address</b></center>
+                    <p style="text-align: center">3353 Mississauga Rd<br> University of Toronto<br>Mississauga<br>
+                        ON,Canada</p>         
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <center><small>&copy; Copyright 2019, Gautam Gireesh</small></center>
+        </footer>
+    </body>
+</html>
