@@ -11,12 +11,30 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            $(document).ready(function(){
+              $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                  $('html, body').animate({scrollTop: $(hash).offset().top}, 
+                  300, function(){
+                    window.location.hash = hash;
+                  });
+                }
+              });
+            });
+        </script>
         <style>
-        .w3-lobster {
+            html{
+                scroll-behavior: smooth;
+            }
+            .w3-lobster {
                 font-family: "Lobster", serif;
             }
             body, html {
@@ -197,7 +215,7 @@ and open the template in the editor.
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                    <a style="color: #ff0033; font-weight: bolder"class="navbar-brand" href="#"><p class="w3-xlarge w3-lobster">GG</p></a>
+                    <a style="color: #ff0033; font-weight: bolder "class="navbar-brand" href="#"><p class="w3-xlarge w3-lobster">GG</p></a>
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -242,27 +260,27 @@ and open the template in the editor.
                 <center><hr>
                 <div class="row">
                     <div class="col-xs-6">
-                        <div class="proj_card">
+                        <div class="proj_card"><a href="https://github.com/gautamgireesh/Telephone-Directory">
                             <img style="width: 40px; border-radius: 50%;" src="telephone.jpg" alt="telephone"/>
                             <h4 style="font-weight: bolder;"><font color="white">Telephone directory</font></h4>
                             <h6><font color="white">Languages used: C++</font></h6>
-                        </div>
+                        </a></div>
                     </div>
                     <div class="col-xs-6">
-                        <div class="proj_card">
+                        <div class="proj_card"><a href="https://github.com/gautamgireesh/Social-Media-Platform">
                             <img style="width: 70px; border-radius: 50%;" src="bird.jpg" alt="bird"/>
                             <h4 style="font-weight: bolder;"><font color="white">Chirpr</font></h4>
                             <h6><font color="white">Languages used: Python</font></h6>
-                        </div>
+                        </a></div>
                     </div> 
                 </div>
                 <div class="row">
                     <div class="col-xs-6">
-                        <div class="proj_card">
+                        <div class="proj_card"><a href="https://github.com/gautamgireesh/Mewbile-Tech">
                             <img style="width: 50px; border-radius: 50%;" src="tower.jpg" alt=""/>
                             <h4 style="font-weight: bolder;"><font color="white">Mewbile Tech</font></h4>
                             <h6><font color="white">Languages used: Python</font></h6>
-                        </div>
+                            </a></div>
                     </div>
                     <div class="col-xs-6">
                         <div class="proj_card">
